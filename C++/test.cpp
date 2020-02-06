@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
-
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        
+    }
+};
 int main(){
-    string s = "abcd";
-    string test;
-    char a =s[s.length()-1];
-    cout<< a <<endl;
+    
     system("pause");
     return 0;
 }
