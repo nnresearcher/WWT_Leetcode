@@ -16,7 +16,7 @@ class Solution {
 public:
     int minimumLengthEncoding(vector<string>& words) {
         sort(words.begin(), words.end(), comps);
-        trieNode *root = new trieNode();
+        trieNoderoot = new trieNode();
         int ans = 0;
         for (int i = 0; i < words.size(); i++)
         {
@@ -25,14 +25,14 @@ public:
         return ans;
     }
 
-    void update(trieNode *dicts, string word, int &length) {
+    void update(trieNodedicts, string word, int &length) {
         reverse(word.begin(), word.end());
         bool updateflag = false;
-        trieNode * tmpdict = dicts;
+        trieNodetmpdict = dicts;
         for (int i = 0; i < word.size(); i++) {
             if (tmpdict->children.count(word[i]) == 0) {
                 updateflag = true;
-                trieNode *root = new trieNode();
+                trieNoderoot = new trieNode();
                 tmpdict->children[word[i]] = root;
             }
             tmpdict = tmpdict->children[word[i]];

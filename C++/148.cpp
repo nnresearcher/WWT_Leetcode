@@ -10,7 +10,7 @@ using namespace std;
 
 struct ListNode {
     int val;
-    ListNode *next;
+    ListNodenext;
     ListNode(int x) : val(x), next(NULL) {}
 };
 

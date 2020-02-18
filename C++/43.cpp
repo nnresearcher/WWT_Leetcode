@@ -15,7 +15,7 @@ public:
             for (int j = 0; j < num2.size(); j++)
             {
                 int position = (i + j);
-                int tmp = (num1[i] - '0') * (num2[j] - '0');
+                int tmp = (num1[i] - '0')(num2[j] - '0');
                 ans[position] += tmp;
             }
         }

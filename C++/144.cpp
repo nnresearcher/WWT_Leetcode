@@ -13,8 +13,8 @@ using namespace std;
 
 struct TreeNode {
     int val;
-    TreeNode *left;
-    TreeNode *right;
+    TreeNodeleft;
+    TreeNoderight;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 class Solution {
